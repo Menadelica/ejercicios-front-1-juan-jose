@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunguiShop</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg menu navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand funguishop-logo" href="#">
+                FunguiShop<span class="logo-dot">.</span>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/foto1.avif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/foto2.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/foto3.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    
+    <main>
+        <section class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-6">
+                    <img src="./img/logo.png" alt="planeta" class="img-fluid rounded-circle shadow-lg mx-auto d-block" style="max-width: 700px; ">
+                </div>
+                <div class="col-lg-6">
+                    <div>
+                        <h1>Welcome to FunguiShop</h1>
+                        <p class="lead">Disfruta de la mas alta calidad, te sorprenderas explorando mundos magicos.</p>
+                        
+                    </div>
+                    <form class="form-container mt-4">
+                        <h3 class="text-center">registrate</h3>
+                        <input type="text" class="form-control my-3" placeholder="ingresa tu nombre " id="nombre2">
+                        <input type="date" class="form-control my-3" placeholder="fecha actual" id="contraseña2">
+                        <input type="email" class="form-control my-3" placeholder="correo usuario" id="correo2">
+                        <button class="btn btn-dark" >enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="container-fluid text-white colorfooter p-5">
+          <div class="row">
+            <div class="col-6 text-center">
+              <h2>Terms & Conditions</h2>
+              <p class="text-start">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione commodi laborum, optio magnam placeat officia ipsa unde voluptas omnis iusto.</p>
+            </div>
+            <form class="col-6 text-start">
+                <h2 class="text-center">Iniciar sesion</h2>
+                 <input type="text" class="form-control my-3" placeholder="nombre usuario" id="nombre">    
+                <input type="password" class="form-control my-3" placeholder="contraseña" id="password">
+               
+                <button class="btn btn-dark" id="boton">login</button>
+          </form>
+          </div>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
